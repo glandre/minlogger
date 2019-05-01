@@ -1,0 +1,47 @@
+{
+  "name": "minlogger",
+  "version": "1.0.1",
+  "description": "A Minimal Logger based on Console",
+  "main": "dist/Logger.js",
+  "module": "src/Logger.js",
+  "scripts": {
+    "test": "NODE_ENV=testing jest --watch",
+    "test-ci": "CI=true NODE_ENV=testing jest",
+    "lint": "eslint src",
+    "build": "babel -d dist src/Logger.js && npm run uglify",
+    "clean": "rimraf dist",
+    "uglify": "uglifyjs dist/Logger.js -cm -o dist/Logger.js",
+    "prepublish": "npm run clean && npm run build && npm run test-ci"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4",
+    "@babel/node": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "babel": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
+    "eslint": "^5.16.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "jest": "^24.7.1",
+    "nodemon": "^1.18.11",
+    "rimraf": "^2.6.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/glandre/minlogger.git"
+  },
+  "keywords": [
+    "logger"
+  ],
+  "author": "Geraldo B. Landre <geraldo.landre@tuta.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/glandre/minlogger/issues"
+  },
+  "homepage": "https://github.com/glandre/minlogger#readme"
+}
