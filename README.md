@@ -34,9 +34,9 @@ logger.silly('Debug Message', { moreInfo: 'Details' })
 
 #### **level (String)**
 
-Level of `console`. `error`, `warn`, `info`, `verbose`, `debug`, `silly`
+Level of `console`. Possible values are: `error`, `warn`, `info`, `verbose`, `debug`, `silly`
 
-_Default: `debug`_
+_Default: `error`_
 
 _Notice: the standard `console.debug` is not used, `console.log` is used instead._
 
