@@ -42,6 +42,6 @@ _Notice: the standard `console.debug` is not used, `console.log` is used instead
 
 #### **spaced (Boolean)**
 
-Print several before and after each message.
+Print several lines before and after each message.
 
 _Default: `false`_
