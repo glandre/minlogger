@@ -3,7 +3,6 @@
   "version": "1.0.1",
   "description": "A Minimal Logger based on Console",
   "main": "dist/Logger.js",
-  "module": "src/Logger.js",
   "scripts": {
     "test": "NODE_ENV=testing jest --watch",
     "test-ci": "CI=true NODE_ENV=testing jest",
