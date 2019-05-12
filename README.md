@@ -1,6 +1,9 @@
 # minlogger
 
-A Minimal Logger based on Console
+Setting up Winston would be too much work in the begginning of your project?
+Meet `minlogger`, a Minimal Logger based on Console! Get your project started with it, and migrate to Winston when the time is right!
+
+`minlogger` provides a compatible interface as `winston`, allowing you to easily switch between the two.
 
 ## Install
 
