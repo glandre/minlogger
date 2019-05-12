@@ -1,6 +1,6 @@
 {
   "name": "minlogger",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A Minimal Logger based on Console",
   "main": "dist/Logger.js",
   "scripts": {
