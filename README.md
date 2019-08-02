@@ -17,7 +17,7 @@ npm i minlogger
 import { createLogger } from 'minlogger'
 
 const logger = createLogger({
-  level: 'debug',
+  level: 'info',
   spaced: true
 })
 
@@ -39,7 +39,7 @@ logger.silly('Debug Message', { moreInfo: 'Details' })
 
 Level of `console`. Possible values are: `error`, `warn`, `info`, `verbose`, `debug`, `silly`
 
-_Default: `error`_
+_Default: `debug`_
 
 _Notice: the standard `console.debug` is not used, `console.log` is used instead._
 
