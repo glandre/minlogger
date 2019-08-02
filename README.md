@@ -39,7 +39,16 @@ logger.silly('Debug Message', { moreInfo: 'Details' })
 
 Level of `console`. Possible values are: `error`, `warn`, `info`, `verbose`, `debug`, `silly`
 
-_Default: `debug`_
+**Default**: `debug` is used if **level is omitted**. Whereas, `error` is used if an **unrecognized value** is passed.
+
+E.g:
+```js
+// 'debug' level is used
+const logger = createLogger({ spaced: true })
+
+// 'error' level is used
+const logger = createLogger({ level: 'critical', spaced: true })
+```
 
 _Notice: the standard `console.debug` is not used, `console.log` is used instead._
 
@@ -47,4 +56,4 @@ _Notice: the standard `console.debug` is not used, `console.log` is used instead
 
 Print several lines before and after each message.
 
-_Default: `false`_
+**Default**: `false`
