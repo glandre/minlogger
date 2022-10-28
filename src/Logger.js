@@ -6,7 +6,7 @@
  * @author Geraldo B. Landre
  */
 class Logger {
-  constructor(options) {
+  constructor (options) {
     const { level = 'debug', spaced = false } = options || {}
     this.level = Object.keys(LogLevel).includes(level) ? level : 'error'
     this.JUMP_LINES = spaced ? '\n\n\n\n\n\n\n' : ''
