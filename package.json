@@ -9,8 +9,7 @@
     "lint": "eslint src",
     "build": "babel -d dist src/Logger.js && npm run uglify",
     "clean": "rimraf dist",
-    "uglify": "uglifyjs dist/Logger.js -cm -o dist/Logger.js",
-    "prepublish": "npm run clean && npm run build && npm run test-ci"
+    "uglify": "uglifyjs dist/Logger.js -cm -o dist/Logger.js"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.4",

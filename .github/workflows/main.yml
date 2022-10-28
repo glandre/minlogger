@@ -1,0 +1,19 @@
+name: "Lint, Build & Test"
+
+on:
+  pull_request:
+    branches:
+    - main
+jobs:
+  test-source:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-node@v3.5.1
+      - uses: actions/checkout@v2
+      
+      - name: npm install, build and test
+        run: |
+          npm install
+          npm run lint
+          npm run build
+          npm run test-ci
