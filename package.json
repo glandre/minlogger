@@ -4,12 +4,13 @@
   "description": "A Minimal Logger based on Console",
   "main": "dist/Logger.js",
   "scripts": {
-    "test": "NODE_ENV=testing jest --watch",
-    "test-ci": "CI=true NODE_ENV=testing jest",
-    "lint": "eslint src",
     "build": "babel -d dist src/Logger.js && npm run uglify",
     "clean": "rimraf dist",
-    "uglify": "uglifyjs dist/Logger.js -cm -o dist/Logger.js"
+    "lint": "eslint src",
+    "test": "NODE_ENV=testing jest --watch",
+    "test-ci": "CI=true NODE_ENV=testing jest",
+    "uglify": "uglifyjs dist/Logger.js -cm -o dist/Logger.js",
+    "version": "auto-changelog -p && git add CHANGELOG.md"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.4",
@@ -17,6 +18,7 @@
     "@babel/node": "^7.2.2",
     "@babel/plugin-proposal-class-properties": "^7.18.6",
     "@babel/preset-env": "^7.4.4",
+    "auto-changelog": "^2.4.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^5.16.0",
     "eslint-config-standard": "^12.0.0",
