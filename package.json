@@ -25,10 +25,10 @@
     "eslint-plugin-node": "^8.0.1",
     "eslint-plugin-promise": "^4.1.1",
     "eslint-plugin-standard": "^4.0.0",
-    "jest": "^24.7.1",
+    "jest": "^29.2.2",
     "nodemon": "^2.0.20",
     "rimraf": "^2.6.3",
-    "uglifyjs": "^2.4.11"
+    "uglify-js": "^3.17.4"
   },
   "repository": {
     "type": "git",
